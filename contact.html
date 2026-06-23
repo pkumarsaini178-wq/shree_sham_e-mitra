@@ -7,9 +7,17 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body style="overflow: hidden;">
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader-logo"><i class="fa-solid fa-desktop"></i> Shree <span>e-Mitra</span></div>
+    <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
+    <div class="loader-text">LOADING...</div>
+  </div>
 
-  <!-- Navbar -->
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
@@ -21,13 +29,14 @@
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="membership.html" class="nav-link">Membership</a></li>
+        <li><a href="vacancy.html" class="nav-link">Vacancy</a></li>
         <li><a href="about.html" class="nav-link">About Us</a></li>
         <li><a href="contact.html" class="nav-link active">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Page Header -->
   <header class="page-header">
     <div class="container fade-in">
       <h1>Contact Us</h1>
@@ -35,29 +44,26 @@
     </div>
   </header>
 
-  <!-- Contact Section -->
   <section class="section-padding">
     <div class="container">
       <div class="contact-grid">
-        
-        <!-- Contact Information -->
         <div class="contact-info fade-in">
           <h2>Get in Touch</h2>
-          <p class="text-light" style="margin-bottom: 2rem;">Aapke kisi bhi sawaal ya samasya ke liye humse sampark karein.</p>
-          
+          <p class="text-light" style="margin-bottom: 1rem;">Aapke kisi bhi sawaal ya samasya ke liye humse sampark karein.</p>
+
           <div class="contact-item">
             <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div>
               <h4>Address</h4>
-              <p>Shop No. 1, Main Market<br>Ajmer, Rajasthan, India</p>
+              <p>257, Ajmer Road Beawar<br>Daya Nagar, Beawar, Rajasthan 305901</p>
             </div>
           </div>
-          
+
           <div class="contact-item">
             <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
             <div>
               <h4>Phone</h4>
-              <p>+91 XXXXX XXXXX</p>
+              <p>+91 8955128105</p>
             </div>
           </div>
 
@@ -65,10 +71,10 @@
             <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
             <div>
               <h4>Email</h4>
-              <p>info@shree-emitra.com</p>
+              <p>jaishreeshyamemitra2006@gmail.com</p>
             </div>
           </div>
-          
+
           <div class="contact-item">
             <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
             <div>
@@ -78,10 +84,9 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact-form fade-in" style="transition-delay: 0.2s;">
+        <div class="contact-form fade-in-right" style="transition-delay: 0.2s;">
           <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Send us a Message</h3>
-          <form action="#" method="POST">
+          <form id="contactForm">
             <div class="form-group">
               <label for="name" class="form-label">Aapka Naam (Name)</label>
               <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
@@ -94,26 +99,38 @@
               <label for="message" class="form-label">Message / Query</label>
               <textarea id="message" class="form-control" placeholder="How can we help you?" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%;">
+              <span id="btnText">Send Message</span>
+              <span id="btnSpinner" style="display: none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+            </button>
           </form>
+          <div id="formStatus" style="margin-top: 1rem; display: none;"></div>
         </div>
-
       </div>
 
-      <!-- Map Placeholder -->
       <div class="map-container fade-in" style="transition-delay: 0.4s;">
-        <!-- Replace this with a real Google Maps iframe later -->
-        <div style="text-align: center;">
-          <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary);"></i>
-          <h3>Google Maps Integration</h3>
-          <p>Ajmer, Rajasthan Placeholder</p>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.3018!2d74.3255553!3d26.1123813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396970a66ed9d779%3A0xaa37d0d7b59cab4!2s257%2C%20Ajmer%20Rd%20Beawar%2C%20Daya%20Nagar%2C%20Munshi%20Colony%2C%20Beawar%2C%20Rajasthan%20305901!5e0!3m2!1sen!2sin!4v1"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Shree e-Mitra Location">
+        </iframe>
       </div>
-
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Floating Action Buttons -->
+  <a href="https://wa.me/918955128105" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -128,6 +145,8 @@
           <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
+            <a href="membership.html">Membership</a>
+            <a href="vacancy.html">Vacancy</a>
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact</a>
           </div>
@@ -136,8 +155,8 @@
           <h3>Contact Info</h3>
           <div class="footer-links">
             <a href="#"><i class="fa-solid fa-location-dot" style="width: 20px;"></i> Ajmer, Rajasthan</a>
-            <a href="#"><i class="fa-solid fa-phone" style="width: 20px;"></i> +91 XXXXX XXXXX</a>
-            <a href="#"><i class="fa-solid fa-envelope" style="width: 20px;"></i> info@shree-emitra.com</a>
+            <a href="#"><i class="fa-solid fa-phone" style="width: 20px;"></i> +91 8955128105</a>
+            <a href="#"><i class="fa-solid fa-envelope" style="width: 20px;"></i> jaishreeshyamemitra2006@gmail.com</a>
           </div>
         </div>
       </div>

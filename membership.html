@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership - Shree e-Mitra</title>
+  <meta name="description" content="Shree e-Mitra membership plans — choose from 1 month, 3 months, 6 months, 9 months, or 1 year. Get unlimited access to all digital services.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="overflow: hidden;">
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader-logo"><i class="fa-solid fa-desktop"></i> Shree <span>e-Mitra</span></div>
+    <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
+    <div class="loader-text">LOADING...</div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-desktop"></i> Shree <span>e-Mitra</span>
+      </a>
+      <button class="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="membership.html" class="nav-link active">Membership</a></li>
+        <li><a href="vacancy.html" class="nav-link">Vacancy</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <header class="m-hero">
+    <div class="m-hero-particles"></div>
+    <div class="m-hero-shapes">
+      <div class="m-shape m-shape-1"></div>
+      <div class="m-shape m-shape-2"></div>
+      <div class="m-shape m-shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="m-hero-content">
+        <div class="m-hero-badge">
+          <i class="fa-solid fa-crown"></i>
+          <span>Membership Plans 2026</span>
+        </div>
+        <h1>Apni <span class="highlight">Membership</span> Chunein</h1>
+        <p class="m-hero-sub">Ek baar membership lo, saari suvidhaon ka unlimited upyog karein! Jitna bada plan, utni zyada bachat.</p>
+        <div class="m-hero-stats">
+          <div class="m-hero-stat">
+            <span class="m-hero-stat-num">10k+</span>
+            <span class="m-hero-stat-label">Happy Members</span>
+          </div>
+          <div class="m-hero-stat">
+            <span class="m-hero-stat-num">50+</span>
+            <span class="m-hero-stat-label">Services</span>
+          </div>
+          <div class="m-hero-stat">
+            <span class="m-hero-stat-num">&#8377;--</span>
+            <span class="m-hero-stat-label">Max Savings</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="m-how">
+    <div class="container">
+      <div class="text-center fade-in">
+        <h2 class="section-title">Kaise Kaam Karta Hai</h2>
+        <p class="section-subtitle">Sirf 3 aasan steps mein apni membership shuru karein</p>
+      </div>
+      <div class="m-steps">
+        <div class="m-step fade-in">
+          <div class="m-step-num">1</div>
+          <div class="m-step-icon"><i class="fa-solid fa-hand-pointer"></i></div>
+          <h4>Plan Chunein</h4>
+          <p>Apni zaroorat ke hisaab se sahi membership plan select karein</p>
+        </div>
+        <div class="m-step-connector"></div>
+        <div class="m-step fade-in" style="transition-delay: 0.15s;">
+          <div class="m-step-num">2</div>
+          <div class="m-step-icon"><i class="fa-solid fa-file-pen"></i></div>
+          <h4>Registration Karein</h4>
+          <p>Apna registration form bharein aur basic details submit karein</p>
+        </div>
+        <div class="m-step-connector"></div>
+        <div class="m-step fade-in" style="transition-delay: 0.3s;">
+          <div class="m-step-num">3</div>
+          <div class="m-step-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h4>Services Ka Luth Uthayein</h4>
+          <p>Membership active hone ke baad saari suvidhaon ka faayda uthayein</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING PLANS ==================== -->
+  <section class="m-pricing" id="plans">
+    <div class="container">
+      <div class="text-center fade-in">
+        <h2 class="section-title">Membership Plans</h2>
+        <p class="section-subtitle">Har plan mein aapko milengi alag-alag services. Jitna bada plan, utni zyada bachat!</p>
+      </div>
+
+      <!-- TOP ROW: 3 main plans -->
+      <div class="m-plans-top">
+
+        <!-- 1 Month -->
+        <div class="m-card fade-in">
+          <div class="m-card-top m-card-top--basic">
+            <span class="m-card-badge">Basic</span>
+            <div class="m-card-icon-wrap">
+              <div class="m-card-icon"><i class="fa-solid fa-calendar-day"></i></div>
+            </div>
+            <h3 class="m-card-title">1 Month</h3>
+            <div class="m-card-price"><span class="m-price-amount">--</span></div>
+            <p class="m-card-desc">Try karein humari limited services ek mahine ke liye</p>
+          </div>
+          <div class="m-card-body">
+            <div class="m-card-feature-group">
+              <span class="m-feature-label">Included Services</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-check"></i> Aadhar Card Update (1 baar)</li>
+                <li><i class="fa-solid fa-check"></i> PAN Card Apply/Correction</li>
+                <li><i class="fa-solid fa-check"></i> Birth/Death Certificate</li>
+                <li><i class="fa-solid fa-check"></i> Bill Payment & Recharge</li>
+                <li><i class="fa-solid fa-check"></i> 2 Traffic Challan Payment</li>
+              </ul>
+            </div>
+            <div class="m-card-feature-group m-card-excluded">
+              <span class="m-feature-label">Not Included</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-xmark"></i> Passport / Driving Licence</li>
+                <li><i class="fa-solid fa-xmark"></i> Property Tax / Revenue</li>
+                <li><i class="fa-solid fa-xmark"></i> Court / GST / ITR</li>
+              </ul>
+            </div>
+          </div>
+          <div class="m-card-footer">
+            <a href="contact.html" class="btn btn-outline m-card-btn">Contact for Price</a>
+          </div>
+        </div>
+
+        <!-- 3 Months -->
+        <div class="m-card fade-in" style="transition-delay: 0.1s;">
+          <div class="m-card-top m-card-top--silver">
+            <span class="m-card-badge m-badge-silver">Silver</span>
+            <div class="m-card-icon-wrap">
+              <div class="m-card-icon" style="background: linear-gradient(135deg, #F1F5F9, #E2E8F0); color: #475569;"><i class="fa-solid fa-calendar-week"></i></div>
+            </div>
+            <h3 class="m-card-title">3 Months</h3>
+            <div class="m-card-price"><span class="m-price-amount">--</span></div>
+            <p class="m-card-desc">Teen mahine ka saath — aur bhi zyada suvidha</p>
+          </div>
+          <div class="m-card-body">
+            <div class="m-card-feature-group">
+              <span class="m-feature-label">Included Services</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-check"></i> Sabhi 1 Month ki services</li>
+                <li><i class="fa-solid fa-check"></i> Passport Apply (1 baar)</li>
+                <li><i class="fa-solid fa-check"></i> Driving Licence (Learner)</li>
+                <li><i class="fa-solid fa-check"></i> 5 Traffic Challan Payment</li>
+                <li><i class="fa-solid fa-check"></i> Income/Caste/Domicile</li>
+                <li><i class="fa-solid fa-check"></i> Water Bill / Electricity Bill</li>
+              </ul>
+            </div>
+            <div class="m-card-feature-group m-card-excluded">
+              <span class="m-feature-label">Not Included</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-xmark"></i> Property Tax / Court Challan</li>
+                <li><i class="fa-solid fa-xmark"></i> GST / ITR / Scheme Reg.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="m-card-footer">
+            <a href="contact.html" class="btn btn-outline m-card-btn">Contact for Price</a>
+          </div>
+        </div>
+
+        <!-- 6 Months (FEATURED) -->
+        <div class="m-card m-card--featured fade-in" style="transition-delay: 0.2s;">
+          <div class="m-card-top m-card-top--gold">
+            <span class="m-card-badge m-badge-gold">Gold <i class="fa-solid fa-star" style="font-size: 0.6rem;"></i></span>
+            <div class="m-card-icon-wrap">
+              <div class="m-card-icon" style="background: linear-gradient(135deg, #FEF3C7, #FDE68A); color: #D97706;"><i class="fa-solid fa-crown"></i></div>
+            </div>
+            <h3 class="m-card-title">6 Months</h3>
+            <div class="m-card-price"><span class="m-price-amount">--</span> <span class="m-price-period">/6mo</span></div>
+            <p class="m-card-desc">Sabse popular plan! Aadhi saal ki unlimited services</p>
+          </div>
+          <div class="m-card-body">
+            <div class="m-card-feature-group">
+              <span class="m-feature-label">Included Services</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-check"></i> Sabhi 3 Month ki services</li>
+                <li><i class="fa-solid fa-check"></i> Property Tax / Revenue Challan</li>
+                <li><i class="fa-solid fa-check"></i> Court Challan Filing</li>
+                <li><i class="fa-solid fa-check"></i> 10 Traffic Challan Payment</li>
+                <li><i class="fa-solid fa-check"></i> Govt Scheme Registration</li>
+                <li><i class="fa-solid fa-check"></i> RC Transfer / Vehicle Reg.</li>
+                <li><i class="fa-solid fa-check"></i> Unlimited Certificates</li>
+              </ul>
+            </div>
+            <div class="m-card-feature-group m-card-excluded">
+              <span class="m-feature-label">Not Included</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-xmark"></i> GST / Professional Tax</li>
+                <li><i class="fa-solid fa-xmark"></i> Land Conversion</li>
+              </ul>
+            </div>
+          </div>
+          <div class="m-card-footer">
+            <a href="contact.html" class="btn btn-accent m-card-btn pulse-glow"><i class="fa-solid fa-fire"></i> Contact for Price</a>
+          </div>
+        </div>
+
+      </div><!-- /top row -->
+
+      <!-- BOTTOM ROW: 2 plans -->
+      <div class="m-plans-bottom">
+
+        <!-- 9 Months -->
+        <div class="m-card m-card--half fade-in" style="transition-delay: 0.3s;">
+          <div class="m-card-top m-card-top--platinum">
+            <span class="m-card-badge m-badge-platinum">Platinum</span>
+            <div class="m-card-icon-wrap">
+              <div class="m-card-icon" style="background: linear-gradient(135deg, #E0E7FF, #C7D2FE); color: #4F46E5;"><i class="fa-solid fa-gem"></i></div>
+            </div>
+            <h3 class="m-card-title">9 Months</h3>
+            <div class="m-card-price"><span class="m-price-amount">--</span> <span class="m-price-period">/9mo</span></div>
+            <p class="m-card-desc">Teen chauthai saal ki super savings ke saath</p>
+          </div>
+          <div class="m-card-body">
+            <div class="m-card-feature-group">
+              <span class="m-feature-label">Included Services</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-check"></i> Sabhi 6 Month ki services</li>
+                <li><i class="fa-solid fa-check"></i> GST Challan (PMT-06)</li>
+                <li><i class="fa-solid fa-check"></i> Professional Tax Payment</li>
+                <li><i class="fa-solid fa-check"></i> 20 Traffic Challan Payment</li>
+                <li><i class="fa-solid fa-check"></i> Passport Renewal</li>
+                <li><i class="fa-solid fa-check"></i> Driving Licence (Permanent)</li>
+                <li><i class="fa-solid fa-check"></i> Land Conversion</li>
+                <li><i class="fa-solid fa-check"></i> Hospital / Medical Certificate</li>
+              </ul>
+            </div>
+          </div>
+          <div class="m-card-footer">
+            <a href="contact.html" class="btn btn-outline m-card-btn">Contact for Price</a>
+          </div>
+        </div>
+
+        <!-- 1 Year -->
+        <div class="m-card m-card--half fade-in" style="transition-delay: 0.4s;">
+          <div class="m-card-top m-card-top--diamond">
+            <span class="m-card-badge m-badge-diamond">Diamond <i class="fa-solid fa-gem" style="font-size: 0.6rem;"></i></span>
+            <div class="m-card-icon-wrap">
+              <div class="m-card-icon" style="background: linear-gradient(135deg, #FEE2E2, #FECACA); color: #DC2626;"><i class="fa-solid fa-star"></i></div>
+            </div>
+            <h3 class="m-card-title">1 Year</h3>
+            <div class="m-card-price"><span class="m-price-amount">--</span> <span class="m-price-period">/yr</span></div>
+            <p class="m-card-desc">Poore saal ki unlimited — sabse kifayati plan!</p>
+          </div>
+          <div class="m-card-body">
+            <div class="m-card-feature-group">
+              <span class="m-feature-label">Included Services</span>
+              <ul class="m-feature-list">
+                <li><i class="fa-solid fa-check"></i> Sabhi 9 Month ki services</li>
+                <li><i class="fa-solid fa-check"></i> ITR Filing (1 baar free)</li>
+                <li><i class="fa-solid fa-check"></i> Scholarship Challan</li>
+                <li><i class="fa-solid fa-check"></i> Unlimited Traffic Challan</li>
+                <li><i class="fa-solid fa-check"></i> University / Board Exam Fees</li>
+                <li><i class="fa-solid fa-check"></i> Trade License Renewal</li>
+                <li><i class="fa-solid fa-check"></i> SSO Rajasthan Portal Access</li>
+                <li><i class="fa-solid fa-check"></i> Priority Support (24/7)</li>
+                <li><i class="fa-solid fa-check"></i> Free Document Scanning</li>
+                <li><i class="fa-solid fa-check"></i> Home Visit (1 baar)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="m-card-footer">
+            <a href="contact.html" class="btn btn-accent m-card-btn pulse-glow"><i class="fa-solid fa-phone"></i> Contact for Price</a>
+          </div>
+        </div>
+
+      </div><!-- /bottom row -->
+
+      <!-- ==================== SAVINGS BAR ==================== -->
+      <div class="m-savings fade-in">
+        <div class="m-savings-content">
+          <div class="m-savings-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+          <div>
+            <h3>Annual Plan Mein Bachat!</h3>
+            <p>1 Year membership lene par aapko lagbhag <strong>40% tak ki bachat</strong> hoti hai compared to monthly plan. Zyada savings, zyada services!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== COMPARISON TABLE ==================== -->
+  <section class="m-compare">
+    <div class="container">
+      <div class="text-center fade-in">
+        <h2 class="section-title">Plan Comparison</h2>
+        <p class="section-subtitle">Ek nazar mein sabhi plans ki tulna karein aur apne liye sahi plan chunein</p>
+      </div>
+
+      <div class="compare-table-wrap fade-in">
+        <table class="m-compare-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th><span class="m-th-label">1 Month</span><span class="m-th-badge">Basic</span></th>
+              <th><span class="m-th-label">3 Months</span><span class="m-th-badge m-badge-silver">Silver</span></th>
+              <th class="col-highlight"><span class="m-th-label">6 Months</span><span class="m-th-badge m-badge-gold">Gold</span></th>
+              <th><span class="m-th-label">9 Months</span><span class="m-th-badge m-badge-platinum">Platinum</span></th>
+              <th><span class="m-th-label">1 Year</span><span class="m-th-badge m-badge-diamond">Diamond</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Aadhar / PAN</td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Birth / Death Certificate</td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Bill Payment & Recharge</td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Traffic Challan</td><td><span class="m-limit">2</span></td><td><span class="m-limit">5</span></td><td class="col-highlight"><span class="m-limit">10</span></td><td><span class="m-limit">20</span></td><td><span class="m-unlimited">Unlimited</span></td></tr>
+            <tr><td>Income / Caste / Domicile</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Passport Apply</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Driving Licence</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><span class="m-limit">Learner</span></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><span class="m-limit">Permanent</span></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Govt Scheme Registration</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Property Tax / Revenue</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Court Challan</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>RC / Vehicle Registration</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>GST Challan (PMT-06)</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Professional Tax</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Land Conversion</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-check check-yes"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>ITR Filing</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td><span class="m-free">1 Free</span></td></tr>
+            <tr><td>SSO Rajasthan Portal</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-check check-yes"></i></td></tr>
+            <tr><td>Priority Support</td><td><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td class="col-highlight"><i class="fa-solid fa-xmark check-no"></i></td><td><i class="fa-solid fa-xmark check-no"></i></td><td><span class="m-free">24/7</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="m-faq">
+    <div class="container">
+      <div class="text-center fade-in">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Membership se related aam sawaalon ke jawab</p>
+      </div>
+      <div class="m-faq-list fade-in">
+        <div class="m-faq-item">
+          <button class="m-faq-question">
+            <span>Membership lene ke kya fayde hain?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="m-faq-answer">
+            <p>Membership lene par aapko har service ke liye alag se fee nahi deni padti. Ek baar membership lo aur saari suvidhaon ka unlimited upyog karein. Jitna bada plan, utni zyada bachat!</p>
+          </div>
+        </div>
+        <div class="m-faq-item">
+          <button class="m-faq-question">
+            <span>Kya main plan upgrade kar sakta hoon?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="m-faq-answer">
+            <p>Haan, aap kisi bhi samay apna plan upgrade kar sakte hain. Sirf price ka difference dena hoga. Jaise 1 Month se 6 Month ya 1 Year plan mein upgrade possible hai.</p>
+          </div>
+        </div>
+        <div class="m-faq-item">
+          <button class="m-faq-question">
+            <span>Kya membership poori family ke liye valid hai?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="m-faq-answer">
+            <p>Haan, aapki membership aapke parivar ke sabhi sadasyon ke liye valid hai. Ek hi membership se ghar ke sabhi log seva ka fayda utha sakte hain.</p>
+          </div>
+        </div>
+        <div class="m-faq-item">
+          <button class="m-faq-question">
+            <span>Kya membership refundable hai?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="m-faq-answer">
+            <p>Membership ek baar activate hone ke baad non-refundable hai. Lekin agar aap kisi karan se service use nahi kar paate hain toh hum aapki membership ko next cycle ke liye extend kar sakte hain.</p>
+          </div>
+        </div>
+        <div class="m-faq-item">
+          <button class="m-faq-question">
+            <span>Kya main kisi bhi din membership le sakta hoon?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="m-faq-answer">
+            <p>Bilkul! Aap kisi bhi din Shree e-Mitra aakar ya phone karke membership le sakte hain. Kisi bhi tarah ki online ya offline suvidha uplabdh hai. Aaj hi sampark karein!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="m-cta">
+    <div class="container">
+      <div class="m-cta-box fade-in">
+        <div class="m-cta-content">
+          <h2>Aaj Hi Membership Lein!</h2>
+          <p>Kisi bhi plan ki jaankari, price aur registration ke liye humse sampark karein. Hamari team aapki sahayta ke liye tayaar hai.</p>
+          <div class="m-cta-btns">
+            <a href="contact.html" class="btn btn-accent btn-lg pulse-glow"><i class="fa-solid fa-phone"></i> Call Now</a>
+            <a href="contact.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;"><i class="fa-solid fa-envelope"></i> Enquire Online</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Action Buttons -->
+  <a href="https://wa.me/918955128105" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;">
+            <i class="fa-solid fa-desktop"></i> Shree <span class="text-accent">e-Mitra</span>
+          </a>
+          <p>Aapki Seva, Hamaari Zimmedaari. We are dedicated to bringing digital India to your local community.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="membership.html">Membership</a>
+            <a href="vacancy.html">Vacancy</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fa-solid fa-location-dot" style="width: 20px;"></i> Ajmer, Rajasthan</a>
+            <a href="#"><i class="fa-solid fa-phone" style="width: 20px;"></i> +91 8955128105</a>
+            <a href="#"><i class="fa-solid fa-envelope" style="width: 20px;"></i> jaishreeshyamemitra2006@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shree e-Mitra. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.m-faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('m-faq-open');
+        document.querySelectorAll('.m-faq-item').forEach(i => i.classList.remove('m-faq-open'));
+        if (!isOpen) item.classList.add('m-faq-open');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -36,7 +36,7 @@ app.post('/send-message', async (req, res) => {
           <h1 style="color: white; margin: 0; font-size: 24px;">📬 New Contact Form Submission</h1>
         </div>
         <div style="background: #F8FAFC; padding: 20px; border: 1px solid #E2E8F0; border-radius: 0 0 10px 10px;">
-          <p style="margin: 0 0 15px; color: #64748B; font-size: 14px;">Aapko Shree e-Mitra website se ek naya message mila hai:</p>
+          <p style="margin: 0 0 15px; color: #64748B; font-size: 14px;">Aapko Shree Shyam e-Mitra website se ek naya message mila hai:</p>
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
               <td style="padding: 10px; border-bottom: 1px solid #E2E8F0; font-weight: 600; color: #1E293B; width: 100px;">Name</td>
@@ -51,7 +51,7 @@ app.post('/send-message', async (req, res) => {
               <td style="padding: 10px; border-bottom: 1px solid #E2E8F0; color: #1E293B;">${message}</td>
             </tr>
           </table>
-          <p style="margin-top: 20px; color: #94A3B8; font-size: 12px;">Yeh email Shree e-Mitra website ke contact form se auto-generated hai.</p>
+          <p style="margin-top: 20px; color: #94A3B8; font-size: 12px;">Yeh email Shree Shyam e-Mitra website ke contact form se auto-generated hai.</p>
         </div>
       </div>
     `

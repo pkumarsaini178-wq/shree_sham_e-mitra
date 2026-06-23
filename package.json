@@ -1,7 +1,7 @@
 {
   "name": "shree-emitra-website",
   "version": "1.0.0",
-  "description": "Shree e-Mitra website with email contact form backend",
+  "description": "Shree Shyam e-Mitra website with email contact form backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

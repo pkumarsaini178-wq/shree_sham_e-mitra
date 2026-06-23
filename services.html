@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Shree e-Mitra</title>
+  <title>Services - Shree Shyam e-Mitra</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body style="overflow: hidden;">
   <!-- Loading Screen -->
   <div class="loading-screen" id="loadingScreen">
-    <div class="loader-logo"><i class="fa-solid fa-desktop"></i> Shree <span>e-Mitra</span></div>
+    <div class="loader-logo"><i class="fa-solid fa-desktop"></i> Shree Shyam <span>e-Mitra</span></div>
     <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
     <div class="loader-text">LOADING...</div>
   </div>
@@ -21,7 +21,7 @@
   <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <i class="fa-solid fa-desktop"></i> Shree <span>e-Mitra</span>
+        <i class="fa-solid fa-desktop"></i> Shree Shyam <span>e-Mitra</span>
       </a>
       <button class="mobile-menu-btn">
         <i class="fa-solid fa-bars"></i>
@@ -31,6 +31,7 @@
         <li><a href="services.html" class="nav-link active">Services</a></li>
         <li><a href="membership.html" class="nav-link">Membership</a></li>
         <li><a href="vacancy.html" class="nav-link">Vacancy</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
         <li><a href="about.html" class="nav-link">About Us</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
@@ -47,53 +48,54 @@
   <section class="section-padding">
     <div class="container">
       <div class="services-grid">
-        <div class="service-card fade-in tilt-card">
-          <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
-          <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
-          <h3>Aadhar Card Update</h3>
-          <p>Name, DOB, address update and new enrollment assistance.</p>
-        </div>
-        <div class="service-card fade-in tilt-card" style="transition-delay: 0.1s;">
+
+        <div class="service-card fade-in tilt-card clickable-service" style="transition-delay: 0.1s;" data-service="pan">
           <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
           <div class="service-icon"><i class="fa-solid fa-address-card"></i></div>
           <h3>PAN Card Apply/Correction</h3>
           <p>Apply for a new PAN card or make corrections to an existing one.</p>
         </div>
-        <div class="service-card fade-in tilt-card" style="transition-delay: 0.2s;">
+        <div class="service-card fade-in tilt-card clickable-service" style="transition-delay: 0.2s;" data-service="birth-death">
           <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
           <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
           <h3>Birth/Death Certificate</h3>
           <p>Quick processing for essential life event certificates.</p>
         </div>
-        <div class="service-card fade-in tilt-card" style="transition-delay: 0.3s;">
+        <div class="service-card fade-in tilt-card clickable-service" style="transition-delay: 0.3s;" data-service="certificate">
           <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
           <div class="service-icon"><i class="fa-solid fa-file-invoice"></i></div>
           <h3>Income/Caste/Domicile Certificate</h3>
           <p>Get your official documents verified and issued effortlessly.</p>
         </div>
-        <div class="service-card fade-in tilt-card">
+        <div class="service-card fade-in tilt-card clickable-service" data-service="bill-payment">
           <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
           <div class="service-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
           <h3>Bill Payment & Recharge</h3>
           <p>Electricity, water bills, and mobile/DTH recharges done instantly.</p>
         </div>
-        <div class="service-card fade-in tilt-card" style="transition-delay: 0.1s;">
+        <div class="service-card fade-in tilt-card clickable-service" style="transition-delay: 0.1s;" data-service="govt-scheme">
           <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
           <div class="service-icon"><i class="fa-solid fa-landmark"></i></div>
           <h3>Government Scheme Registration</h3>
           <p>Assistance with applying for various state and central govt schemes.</p>
         </div>
-        <div class="service-card fade-in tilt-card" style="transition-delay: 0.2s;">
+        <div class="service-card fade-in tilt-card clickable-service" style="transition-delay: 0.2s;" data-service="passport">
           <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
           <div class="service-icon"><i class="fa-solid fa-passport"></i></div>
           <h3>Passport Apply</h3>
           <p>End-to-end guidance for new passport applications and renewals.</p>
         </div>
-        <div class="service-card fade-in tilt-card" style="transition-delay: 0.3s;">
+        <div class="service-card fade-in tilt-card clickable-service" style="transition-delay: 0.3s;" data-service="driving-licence">
           <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
           <div class="service-icon"><i class="fa-solid fa-car"></i></div>
           <h3>Driving Licence</h3>
           <p>Apply for learner's or permanent driving licence with our help.</p>
+        </div>
+        <div class="service-card fade-in tilt-card clickable-service" style="transition-delay: 0.4s;" data-service="jan-aadhar">
+          <div class="service-badge"><i class="fa-solid fa-circle-check"></i></div>
+          <div class="service-icon"><i class="fa-solid fa-id-card-clip"></i></div>
+          <h3>Jan Aadhar Card</h3>
+          <p>Apply for a new Jan Aadhar card or update family members and details.</p>
         </div>
       </div>
     </div>
@@ -108,15 +110,16 @@
           <span>Rajasthan Government Authorized</span>
         </div>
         <h2 class="section-title">Rajasthan Government Ke Sabhi Major Challans</h2>
-        <p class="section-subtitle">Aapki saari sarkaari challeng aur biling ki suvidha ek hi jagah — Shree e-Mitra par.</p>
+        <p class="section-subtitle">Aapki saari sarkaari challeng aur biling ki suvidha ek hi jagah — Shree Shyam e-Mitra par.</p>
       </div>
 
       <!-- 1 Traffic Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-traffic" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon"><i class="fa-solid fa-traffic-light"></i></div>
           <div>
             <h3>1. Traffic Challans <span class="challan-sub">(Yatayat Challan)</span></h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -142,10 +145,11 @@
 
       <!-- 2 Court Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-court" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon" style="background: linear-gradient(135deg, #FEF3C7, #FDE68A); color: #D97706;"><i class="fa-solid fa-gavel"></i></div>
           <div>
             <h3>2. Court Challans <span class="challan-sub">(Nyayalay Challan)</span></h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -165,10 +169,11 @@
 
       <!-- 3 Revenue & Property Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-revenue" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon" style="background: linear-gradient(135deg, #D1FAE5, #A7F3D0); color: #059669;"><i class="fa-solid fa-house-chimney"></i></div>
           <div>
             <h3>3. Revenue & Property Challans</h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -189,10 +194,11 @@
 
       <!-- 4 Education Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-education" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon" style="background: linear-gradient(135deg, #DBEAFE, #BFDBFE); color: #2563EB;"><i class="fa-solid fa-graduation-cap"></i></div>
           <div>
             <h3>4. Education Challans</h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -213,10 +219,11 @@
 
       <!-- 5 Utility & Municipal Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-utility" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon" style="background: linear-gradient(135deg, #FCE7F3, #FBCFE8); color: #DB2777;"><i class="fa-solid fa-building"></i></div>
           <div>
             <h3>5. Utility & Municipal Challans</h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -237,10 +244,11 @@
 
       <!-- 6 Transport Department Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-transport" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon" style="background: linear-gradient(135deg, #E0E7FF, #C7D2FE); color: #4F46E5;"><i class="fa-solid fa-truck"></i></div>
           <div>
             <h3>6. Transport Department Challans</h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -261,10 +269,11 @@
 
       <!-- 7 Health Department Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-health" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon" style="background: linear-gradient(135deg, #FDE68A, #FCD34D); color: #B45309;"><i class="fa-solid fa-hospital"></i></div>
           <div>
             <h3>7. Health Department Challans</h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -283,10 +292,11 @@
 
       <!-- 8 GST & Tax Challans -->
       <div class="challan-category fade-in">
-        <div class="challan-category-header">
+        <div class="challan-category-header clickable-service" data-service="challan-gst" style="cursor: pointer;" title="Click to view required documents">
           <div class="challan-category-icon" style="background: linear-gradient(135deg, #D1D5DB, #9CA3AF); color: #1F2937;"><i class="fa-solid fa-file-invoice-dollar"></i></div>
           <div>
             <h3>8. GST & Tax Challans</h3>
+            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -332,7 +342,7 @@
       </div>
 
       <div class="text-center fade-in" style="margin-top: 3rem;">
-        <p class="challan-cta-text">In sabhi challan services ke liye aaj hi Shree e-Mitra sampark karein!</p>
+        <p class="challan-cta-text">In sabhi challan services ke liye aaj hi Shree Shyam e-Mitra sampark karein!</p>
         <a href="contact.html" class="btn btn-accent pulse-glow" style="margin-top: 1rem;">
           <i class="fa-solid fa-phone"></i> Aaj Hi Sampark Karein
         </a>
@@ -341,7 +351,7 @@
   </section>
 
   <!-- Floating Action Buttons -->
-  <a href="https://wa.me/918955128105" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/916377507537" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
@@ -353,7 +363,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;">
-            <i class="fa-solid fa-desktop"></i> Shree <span class="text-accent">e-Mitra</span>
+            <i class="fa-solid fa-desktop"></i> Shree Shyam <span class="text-accent">e-Mitra</span>
           </a>
           <p>Aapki Seva, Hamaari Zimmedaari. We are dedicated to bringing digital India to your local community.</p>
         </div>
@@ -364,6 +374,7 @@
             <a href="services.html">Services</a>
             <a href="membership.html">Membership</a>
             <a href="vacancy.html">Vacancy</a>
+            <a href="portfolio.html">Portfolio</a>
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact</a>
           </div>
@@ -372,16 +383,36 @@
           <h3>Contact Info</h3>
           <div class="footer-links">
             <a href="#"><i class="fa-solid fa-location-dot" style="width: 20px;"></i> Ajmer, Rajasthan</a>
-            <a href="#"><i class="fa-solid fa-phone" style="width: 20px;"></i> +91 8955128105</a>
+            <a href="#"><i class="fa-solid fa-phone" style="width: 20px;"></i> +91 6377507537</a>
             <a href="#"><i class="fa-solid fa-envelope" style="width: 20px;"></i> jaishreeshyamemitra2006@gmail.com</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Shree e-Mitra. All rights reserved.</p>
+        <p>&copy; 2026 Shree Shyam e-Mitra. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Service Details Modal -->
+  <div class="service-modal-overlay" id="serviceModal">
+    <div class="service-modal-content">
+      <button class="service-modal-close" id="closeModalBtn"><i class="fa-solid fa-times"></i></button>
+      <div class="service-modal-header">
+        <div class="service-modal-icon" id="modalIcon"><i class="fa-solid fa-file"></i></div>
+        <div class="service-modal-title">
+          <h2 id="modalTitle">Service Name</h2>
+          <div class="service-price" id="modalPrice">Price: ₹0</div>
+        </div>
+      </div>
+      <div class="service-modal-body" id="modalBody">
+        <!-- Content injected via JS -->
+      </div>
+      <div class="service-modal-footer">
+        <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Sampark Karein</a>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

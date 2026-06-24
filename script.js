@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-traffic': {
       title: 'Traffic Challan Services',
       icon: 'fa-traffic-light',
-      price: 'As per Challan',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>Required Documents:</h4>
         <ul>
@@ -510,7 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-court': {
       title: 'Court Challan Services',
       icon: 'fa-gavel',
-      price: 'As per Case/Fee',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>Required Documents:</h4>
         <ul>
@@ -533,7 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-revenue': {
       title: 'Revenue & Property Challans',
       icon: 'fa-house-chimney',
-      price: 'As per Property/Tax',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>Required Documents:</h4>
         <ul>
@@ -556,7 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-education': {
       title: 'Education Challans',
       icon: 'fa-graduation-cap',
-      price: 'As per Institution',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>Required Documents:</h4>
         <ul>
@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-utility': {
       title: 'Utility & Municipal Challans',
       icon: 'fa-building',
-      price: 'As per Bill/Tax',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>Electricity / Water Bill:</h4>
         <ul>
@@ -604,7 +604,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-transport': {
       title: 'Transport Department Services',
       icon: 'fa-truck',
-      price: 'As per Transport Fee',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>Vehicle Registration Fee:</h4>
         <ul>
@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-health': {
       title: 'Health Department Challans',
       icon: 'fa-hospital',
-      price: 'As per Hospital/Lab',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>Required Documents:</h4>
         <ul>
@@ -650,7 +650,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'challan-gst': {
       title: 'GST & Tax Challans',
       icon: 'fa-file-invoice-dollar',
-      price: 'As per Tax/Penalty',
+      price: 'Actual Amount + 10% Service Charge',
       documents: `
         <h4>GST Challan (PMT-06):</h4>
         <ul>
@@ -676,7 +676,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'bill-payment': {
       title: 'Bill Payment & Recharge',
       icon: 'fa-money-bill-transfer',
-      price: 'As per Bill Amount + Service Charge',
+      price: 'Actual Bill Amount + 10% Service Charge',
       documents: `
         <h4>Required Details:</h4>
         <ul>
@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const data = serviceDetailsData[serviceId];
           modalIcon.innerHTML = `<i class="fa-solid ${data.icon}"></i>`;
           modalTitle.textContent = data.title;
-          modalPrice.textContent = 'Price: ₹' + data.price;
+          modalPrice.textContent = 'Price: ' + (data.price.match(/^[0-9]+$/) ? '₹' + data.price : data.price);
           modalBody.innerHTML = data.documents;
           
           serviceModal.classList.add('active');

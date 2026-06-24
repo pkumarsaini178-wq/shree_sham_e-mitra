@@ -122,6 +122,9 @@
         </div>
         <h2 class="section-title">Rajasthan Government Ke Sabhi Major Forms</h2>
         <p class="section-subtitle">Aapki saari sarkaari forms ki suvidha ek hi jagah — Shree Shyam e-Mitra par.</p>
+        <p class="section-subtitle" style="color: var(--accent); font-weight: 600; margin-top: 10px; font-size: 1.1rem;">
+          <i class="fa-solid fa-tags"></i> Price: Actual Challan Amount + 10% Service Charge
+        </p>
       </div>
 
       <!-- 1 Traffic Challans -->
@@ -131,8 +134,7 @@
           <div class="challan-category-icon"><i class="fa-solid fa-traffic-light"></i></div>
           <div>
             <h3>1. Traffic Challans <span class="challan-sub">(Yatayat Challan)</span></h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -141,48 +143,59 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Speed Violation</td>
                 <td>Tez gaadi chalane par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Red Light Jump</td>
                 <td>Signal todne par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>No Helmet</td>
                 <td>Bina helmet ke bike chalane par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>No Seatbelt</td>
                 <td>Car mein seatbelt na pehenne par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Wrong Parking</td>
                 <td>Galat jagah gaadi khadi karne par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹550</td>
               </tr>
               <tr>
                 <td>Without License</td>
                 <td>Bina driving licence ke</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹5,500</td>
               </tr>
               <tr>
                 <td>Without Insurance</td>
                 <td>Bina insurance ke gaadi chalane par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹2,200</td>
               </tr>
               <tr>
                 <td>Mobile Use While Driving</td>
                 <td>Gaadi chalate waqt phone use karne par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Overloading</td>
                 <td>Gaadi mein zyada saamaan/sawari par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹22,000</td>
               </tr>
               <tr>
                 <td>PUC Not Valid</td>
                 <td>Pollution certificate expired hone par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹11,000</td>
               </tr>
             </tbody>
           </table>
@@ -198,8 +211,7 @@
               class="fa-solid fa-gavel"></i></div>
           <div>
             <h3>2. Court Challans <span class="challan-sub">(Nyayalay Challan)</span></h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -208,24 +220,29 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Civil Court Fee</td>
                 <td>Civil case filing ke liye</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹550</td>
               </tr>
               <tr>
                 <td>Criminal Court Challan</td>
                 <td>Criminal case mein</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹550</td>
               </tr>
               <tr>
                 <td>Stamp Duty Challan</td>
                 <td>Property registration pe</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Judicial Fee Challan</td>
                 <td>Court documents ke liye</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹220</td>
               </tr>
             </tbody>
           </table>
@@ -241,8 +258,7 @@
               class="fa-solid fa-house-chimney"></i></div>
           <div>
             <h3>3. Revenue & Property Challans</h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -251,28 +267,34 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Property Tax Challan</td>
                 <td>Ghar/dukaan ka tax</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Land Revenue Challan</td>
                 <td>Zameen ka sarkaari tax</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹550</td>
               </tr>
               <tr>
                 <td>Mutation Fee Challan</td>
                 <td>Zameen naam transfer karne par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹330</td>
               </tr>
               <tr>
                 <td>Registry Challan</td>
                 <td>Property registration fee</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹2,200</td>
               </tr>
               <tr>
                 <td>Conversion Challan</td>
                 <td>Agricultural to residential land</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹5,500</td>
               </tr>
             </tbody>
           </table>
@@ -288,8 +310,7 @@
               class="fa-solid fa-graduation-cap"></i></div>
           <div>
             <h3>4. Education Challans</h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -298,28 +319,34 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>School Fee Challan</td>
                 <td>Govt school fees</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹550</td>
               </tr>
               <tr>
                 <td>RBSE Exam Fee</td>
                 <td>Board exam form ke liye</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>College Admission Challan</td>
                 <td>Govt college admission</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>University Fee Challan</td>
                 <td>University exam/admission</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹2,200</td>
               </tr>
               <tr>
                 <td>Scholarship Challan</td>
                 <td>Scholarship repayment (if applicable)</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹110</td>
               </tr>
             </tbody>
           </table>
@@ -335,8 +362,7 @@
               class="fa-solid fa-building"></i></div>
           <div>
             <h3>5. Utility & Municipal Challans</h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -345,28 +371,34 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Water Bill Challan</td>
                 <td>PHED / Nagar Palika paani ka bill</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹330</td>
               </tr>
               <tr>
                 <td>Electricity Bill Challan</td>
                 <td>AVVNL / JVVNL / JdVVNL</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>House Tax Challan</td>
                 <td>Municipal corporation</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹550</td>
               </tr>
               <tr>
                 <td>Trade License Fee</td>
                 <td>Dukaan ka licence renew</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹2,200</td>
               </tr>
               <tr>
                 <td>Birth/Death Certificate Fee</td>
                 <td>Certificate banwane ki fee</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹110</td>
               </tr>
             </tbody>
           </table>
@@ -382,8 +414,7 @@
               class="fa-solid fa-truck"></i></div>
           <div>
             <h3>6. Transport Department Challans</h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -392,28 +423,34 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Vehicle Registration Fee</td>
                 <td>Nayi gaadi register karne par</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹5,500</td>
               </tr>
               <tr>
                 <td>DL Application Fee</td>
                 <td>Driving licence banwane ke liye</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Fitness Certificate Fee</td>
                 <td>Commercial vehicle fitness</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Permit Fee Challan</td>
                 <td>Bus/truck permit ke liye</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹2,200</td>
               </tr>
               <tr>
                 <td>RC Transfer Fee</td>
                 <td>Gaadi ka naam transfer</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,650</td>
               </tr>
             </tbody>
           </table>
@@ -429,8 +466,7 @@
               class="fa-solid fa-hospital"></i></div>
           <div>
             <h3>7. Health Department Challans</h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -439,20 +475,24 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Hospital Fee Challan</td>
                 <td>Govt hospital mein fee</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹110</td>
               </tr>
               <tr>
                 <td>Lab Test Fee</td>
                 <td>Sarkari lab test</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹330</td>
               </tr>
               <tr>
                 <td>Medical Certificate Fee</td>
                 <td>Govt doctor se certificate</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹220</td>
               </tr>
             </tbody>
           </table>
@@ -468,8 +508,7 @@
               class="fa-solid fa-file-invoice-dollar"></i></div>
           <div>
             <h3>8. GST & Tax Challans</h3>
-            <span style="font-size: 0.85rem; color: var(--primary); font-weight: 500;"><i
-                class="fa-solid fa-file-circle-check"></i> View Required Documents</span>
+            <button class="btn btn-outline" type="button" style="padding: 0.35rem 0.75rem; font-size: 0.85rem; margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 6px;"><i class="fa-solid fa-file-circle-check"></i> View Required Documents</button>
           </div>
         </div>
         <div class="challan-table-wrap">
@@ -478,24 +517,29 @@
               <tr>
                 <th>Challan Type</th>
                 <th>Kiske Liye</th>
+                <th style="text-align: right; white-space: nowrap;">Total Price (Inc. 10%)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>GST Challan (PMT-06)</td>
                 <td>GST payment ke liye</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Income Tax Challan (280)</td>
                 <td>Income tax payment</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹2,200</td>
               </tr>
               <tr>
                 <td>TDS Challan (281)</td>
                 <td>TDS deposit</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹1,100</td>
               </tr>
               <tr>
                 <td>Professional Tax</td>
                 <td>Vyavsayik kar</td>
+                <td style="text-align: right; font-weight: 600; color: var(--accent);">₹2,200</td>
               </tr>
             </tbody>
           </table>

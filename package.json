@@ -4,7 +4,6 @@
   "description": "Shree Shyam e-Mitra website with email contact form backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "dev": "node server.js"
   },
   "dependencies": {

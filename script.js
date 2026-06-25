@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnSpinner.style.display = 'inline';
 
       try {
-        const response = await fetch('/send-message', {
+        const response = await fetch('/api/send-message', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name, phone, message })

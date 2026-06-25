@@ -710,7 +710,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'passport': {
       title: 'Passport Apply',
       icon: 'fa-passport',
-      price: '₹1500 (Govt Fee) + Service Charge',
+      price: '200',
       documents: `
         <h4>Required Documents (Any 3 generally required):</h4>
         <ul>

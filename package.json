@@ -2,9 +2,8 @@
   "name": "shree-emitra-website",
   "version": "1.0.0",
   "description": "Shree Shyam e-Mitra website with email contact form backend",
-  "main": "server.js",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node local-server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

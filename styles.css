@@ -2101,10 +2101,10 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
-  .challan-category { padding: 1.25rem; }
-  .challan-table { font-size: 0.85rem; }
+  .challan-category { padding: 1rem; }
+  .challan-table { font-size: 0.75rem; }
   .challan-table th,
-  .challan-table td { padding: 0.6rem 0.85rem; }
+  .challan-table td { padding: 0.5rem 0.4rem; white-space: normal !important; }
   .challan-highlight::before { right: 1rem; font-size: 0.7rem; }
 }
 
@@ -3442,6 +3442,11 @@ textarea.form-control {
     padding: 1.5rem 1rem 1rem;
     flex-direction: column;
     text-align: center;
+  }
+
+  .service-modal-title h2 {
+    font-size: 1.25rem;
+    word-break: break-word;
   }
 
   .service-modal-body {

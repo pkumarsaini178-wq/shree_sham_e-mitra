@@ -1,68 +1,186 @@
-export default function Vacancy() {
-  const channels = [
-    {
-      title: "Government Jobs (Sarkari Naukri)",
-      description: "Get instant alerts for all state and central govt job openings, forms, and deadlines.",
-      link: "https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25",
-      icon: "fa-building-columns",
-      color: "#10B981"
-    },
-    {
-      title: "Private Jobs & Placements",
-      description: "Daily updates on private company hirings, walk-in interviews, and placements in Rajasthan.",
-      link: "https://www.whatsapp.com/channel/0029VakBshkEFeXf6jZpEb2G",
-      icon: "fa-briefcase",
-      color: "#3B82F6"
-    },
-    {
-      title: "Shree Shyam e-Mitra Alerts (Any Govt Work)",
-      description: "Get updates for all e-Mitra services, admit cards, results, and other important government work.",
-      link: "https://chat.whatsapp.com/GBimObzmNG3G3xig7wa0ge",
-      icon: "fa-bell",
-      color: "#F59E0B"
-    }
-  ];
+"use client";
+import React from 'react';
+import Link from 'next/link';
 
+export default function Vacancy() {
   return (
     <>
-      <header className="page-header" style={{ background: 'var(--primary-dark)', padding: '4rem 0', textAlign: 'center' }}>
-        <div className="container fade-in appear">
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(37, 211, 102, 0.2)', color: '#25D366', padding: '0.5rem 1rem', borderRadius: '50px', fontWeight: 'bold', marginBottom: '1rem' }}>
-            <i className="fa-brands fa-whatsapp"></i> Join Our WhatsApp Groups
+      <header className="v-page-header">
+        <div className="container">
+          <div className="v-header-content fade-in appear">
+            <div className="v-badge">
+              <i className="fa-solid fa-briefcase"></i>
+              <span>Latest Vacancies</span>
+            </div>
+            <h1>Nauki aur <span className="highlight">Vacancy Updates</span></h1>
+            <p className="v-header-sub">Sabse nayi sarkari aur private naukriyon ki jaankari paane ke liye hamaare WhatsApp channel se judein.</p>
+            <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-accent btn-lg pulse-glow">
+              <i className="fa-brands fa-whatsapp"></i> Join WhatsApp Channel
+            </a>
           </div>
-          <h1>Job Vacancies & <span className="highlight">Alerts</span></h1>
-          <p style={{ color: '#94A3B8', marginTop: '1rem', maxWidth: '600px', margin: '1rem auto' }}>
-            Stay updated with the latest government jobs, private openings, admit cards, and admission alerts directly on your phone.
-          </p>
         </div>
       </header>
 
-      <section className="section-padding" style={{ background: '#F8FAFC' }}>
+      <section className="v-channel-bar">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            {channels.map((channel, index) => (
-              <div key={index} className="tilt-card fade-in appear" style={{ background: 'white', borderRadius: '15px', padding: '2rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', borderTop: `4px solid ${channel.color}` }}>
-                <div style={{ width: '60px', height: '60px', borderRadius: '12px', background: `${channel.color}15`, color: channel.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', marginBottom: '1.5rem' }}>
-                  <i className={`fa-solid ${channel.icon}`}></i>
-                </div>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.75rem', color: '#1E293B' }}>{channel.title}</h3>
-                <p style={{ color: '#64748B', marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: '1.6' }}>{channel.description}</p>
-                <a href={channel.link} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#25D366', color: 'white', padding: '0.75rem 1.5rem', borderRadius: '8px', fontWeight: '600', textDecoration: 'none', transition: 'all 0.3s ease' }}>
-                  <i className="fa-brands fa-whatsapp" style={{ fontSize: '1.2rem' }}></i> Join Group
-                </a>
-              </div>
-            ))}
-          </div>
-
-          <div style={{ marginTop: '4rem', textAlign: 'center', padding: '2rem', background: 'white', borderRadius: '15px', border: '1px dashed #CBD5E1' }} className="fade-in appear">
-            <h3 style={{ color: '#1E293B', marginBottom: '0.5rem' }}>Want alerts for a specific job?</h3>
-            <p style={{ color: '#64748B', marginBottom: '1rem' }}>Send us a direct message on WhatsApp with your query.</p>
-            <a href="https://wa.me/916377507537" target="_blank" rel="noopener noreferrer" className="btn btn-primary pulse-glow">
-              <i className="fa-solid fa-message"></i> Message Us Directly
+          <div className="v-channel-card fade-in appear tilt-card">
+            <div className="v-channel-icon"><i className="fa-brands fa-whatsapp"></i></div>
+            <div className="v-channel-info">
+              <h3>Humara WhatsApp Channel</h3>
+              <p>Har roz nayi vacancy notifications direct aapke phone par. Aaj hi join karein!</p>
+            </div>
+            <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-accent pulse-glow">
+              <i className="fa-brands fa-whatsapp"></i> Join Now
             </a>
           </div>
         </div>
       </section>
+
+      <section className="v-list-section section-padding">
+        <div className="container">
+          <div className="text-center fade-in-up appear">
+            <h2 className="section-title">Recent Vacancy Notifications</h2>
+            <p className="section-subtitle">Yahan par aapko milengi sabhi latest vacancy updates jo hamaare WhatsApp channel par share ki gayi hain.</p>
+          </div>
+
+          <div className="v-feed">
+            <div className="v-post fade-in-up appear tilt-card">
+              <div className="v-post-head">
+                <div className="v-post-avatar"><i className="fa-brands fa-whatsapp"></i></div>
+                <div className="v-post-meta">
+                  <span className="v-post-channel">Shree Shyam e-Mitra Vacancy</span>
+                  <span className="v-post-date"><i className="fa-regular fa-clock"></i> 2 hours ago</span>
+                </div>
+              </div>
+              <div className="v-post-body">
+                <div className="v-post-badge">Sarkari Naukri</div>
+                <h3>Rajasthan Police Constable Bharti 2026</h3>
+                <p>Rajasthan Police ne nayi constable bharti ke liye notification jari kiya hai. Total posts: 8500. Yogyata: 12th pass. Aavedan ki aakhri tarikh: 15 July 2026.</p>
+                <div className="v-post-tags">
+                  <span><i className="fa-solid fa-graduation-cap"></i> 12th Pass</span>
+                  <span><i className="fa-solid fa-location-dot"></i> Rajasthan</span>
+                  <span><i className="fa-solid fa-file-lines"></i> 8500 Posts</span>
+                </div>
+                <div className="v-post-actions">
+                  <a href="#" className="btn btn-sm btn-primary" onClick={(e) => e.preventDefault()}>Apply Link Available</a>
+                  <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline"><i className="fa-brands fa-whatsapp"></i> Channel Par Dekhein</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="v-post fade-in-up appear tilt-card">
+              <div className="v-post-head">
+                <div className="v-post-avatar"><i className="fa-brands fa-whatsapp"></i></div>
+                <div className="v-post-meta">
+                  <span className="v-post-channel">Shree Shyam e-Mitra Vacancy</span>
+                  <span className="v-post-date"><i className="fa-regular fa-clock"></i> 1 day ago</span>
+                </div>
+              </div>
+              <div className="v-post-body">
+                <div className="v-post-badge">Private Job</div>
+                <h3>Bank of Baroda - SO & Management Trainee</h3>
+                <p>Bank of Baroda ne Specialist Officers (SO) aur Management Trainee ke liye bharti nikali hai. Graduates ke liye badhiya mauka. Online aavedan shuru.</p>
+                <div className="v-post-tags">
+                  <span><i className="fa-solid fa-graduation-cap"></i> Graduate</span>
+                  <span><i className="fa-solid fa-calendar"></i> Last Date: 20 July</span>
+                  <span><i className="fa-solid fa-building"></i> Bank of Baroda</span>
+                </div>
+                <div className="v-post-actions">
+                  <a href="#" className="btn btn-sm btn-primary" onClick={(e) => e.preventDefault()}>Apply Now</a>
+                  <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline"><i className="fa-brands fa-whatsapp"></i> Channel Par Dekhein</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="v-post fade-in-up appear tilt-card">
+              <div className="v-post-head">
+                <div className="v-post-avatar"><i className="fa-brands fa-whatsapp"></i></div>
+                <div className="v-post-meta">
+                  <span className="v-post-channel">Shree Shyam e-Mitra Vacancy</span>
+                  <span className="v-post-date"><i className="fa-regular fa-clock"></i> 3 days ago</span>
+                </div>
+              </div>
+              <div className="v-post-body">
+                <div className="v-post-badge">Sarkari Naukri</div>
+                <h3>RPSC Ras/RTS Pre Exam 2026</h3>
+                <p>RPSC dwara Rajasthan Administrative Services (RAS) ke liye preliminary exam ka notification. Yogyata: Graduate. Aavedan ki aakhri tarikh 30 June 2026. Exam August mein.</p>
+                <div className="v-post-tags">
+                  <span><i className="fa-solid fa-graduation-cap"></i> Graduate</span>
+                  <span><i className="fa-solid fa-location-dot"></i> Rajasthan</span>
+                  <span><i className="fa-solid fa-file-lines"></i> RPSC</span>
+                </div>
+                <div className="v-post-actions">
+                  <a href="#" className="btn btn-sm btn-primary" onClick={(e) => e.preventDefault()}>Apply Link Available</a>
+                  <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline"><i className="fa-brands fa-whatsapp"></i> Channel Par Dekhein</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="v-post fade-in-up appear tilt-card">
+              <div className="v-post-head">
+                <div className="v-post-avatar"><i className="fa-brands fa-whatsapp"></i></div>
+                <div className="v-post-meta">
+                  <span className="v-post-channel">Shree Shyam e-Mitra Vacancy</span>
+                  <span className="v-post-date"><i className="fa-regular fa-clock"></i> 5 days ago</span>
+                </div>
+              </div>
+              <div className="v-post-body">
+                <div className="v-post-badge">Private Job</div>
+                <h3>TCS Off Campus Drive 2026</h3>
+                <p>TCS ne freshers ke liye off campus drive nikala hai. Yogyata: B.E/B.Tech/MCA/M.Sc. Selected candidates ko 3.5 - 7 LPA tak salary.</p>
+                <div className="v-post-tags">
+                  <span><i className="fa-solid fa-graduation-cap"></i> B.E/B.Tech</span>
+                  <span><i class="fa-solid fa-indian-rupee-sign"></i> 3.5-7 LPA</span>
+                  <span><i className="fa-solid fa-building"></i> TCS</span>
+                </div>
+                <div className="v-post-actions">
+                  <a href="#" className="btn btn-sm btn-primary" onClick={(e) => e.preventDefault()}>Apply Now</a>
+                  <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline"><i className="fa-brands fa-whatsapp"></i> Channel Par Dekhein</a>
+                </div>
+              </div>
+            </div>
+
+            <div className="v-post fade-in-up appear tilt-card">
+              <div className="v-post-head">
+                <div className="v-post-avatar"><i className="fa-brands fa-whatsapp"></i></div>
+                <div className="v-post-meta">
+                  <span className="v-post-channel">Shree Shyam e-Mitra Vacancy</span>
+                  <span className="v-post-date"><i className="fa-regular fa-clock"></i> 1 week ago</span>
+                </div>
+              </div>
+              <div className="v-post-body">
+                <div className="v-post-badge">Sarkari Naukri</div>
+                <h3>Rajasthan Patwari Bharti 2026</h3>
+                <p>Rajasthan Revenue Department ne Patwari ke liye bharti nikali hai. Total posts: 5200. Yogyata: Graduate with RS-CIT. Online aavedan jaldi shuru hoga.</p>
+                <div className="v-post-tags">
+                  <span><i className="fa-solid fa-graduation-cap"></i> Graduate</span>
+                  <span><i className="fa-solid fa-location-dot"></i> Rajasthan</span>
+                  <span><i className="fa-solid fa-file-lines"></i> 5200 Posts</span>
+                </div>
+                <div className="v-post-actions">
+                  <a href="#" className="btn btn-sm btn-primary" onClick={(e) => e.preventDefault()}>Notification PDF</a>
+                  <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline"><i className="fa-brands fa-whatsapp"></i> Channel Par Dekhein</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center fade-in appear" style={{ marginTop: '3rem' }}>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>Aur bhi vacancies ke liye hamaare WhatsApp channel se jude rahein.</p>
+            <a href="https://whatsapp.com/channel/0029Va4UN8U29757sLNagO25" target="_blank" rel="noopener noreferrer" className="btn btn-accent btn-lg pulse-glow">
+              <i className="fa-brands fa-whatsapp"></i> Join WhatsApp Channel
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Floating Action Buttons */}
+      <a href="https://wa.me/916377507537" target="_blank" rel="noopener noreferrer" className="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
+      <button className="back-to-top visible" onClick={() => window.scrollTo(0, 0)} aria-label="Back to top">
+        <i className="fa-solid fa-chevron-up"></i>
+      </button>
     </>
   );
 }

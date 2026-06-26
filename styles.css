@@ -2790,10 +2790,18 @@ textarea.form-control {
   border-color: #25D366;
 }
 @media (max-width: 768px) {
-  .v-channel-card { flex-direction: column; text-align: center; padding: 1.5rem; }
-  .v-page-header h1 { font-size: 2rem; }
-  .v-post-body { padding: 1rem 1.25rem 1.25rem; }
-  .v-post-head { padding: 0.75rem 1.25rem; }
+  .v-channel-card { flex-direction: column; text-align: center; padding: 1.25rem; }
+  .v-page-header { padding: 3rem 1rem 2rem; }
+  .v-page-header h1 { font-size: 1.75rem; }
+  .v-header-sub { font-size: 0.95rem; }
+  .v-feed { gap: 1rem; }
+  .v-post-body { padding: 1rem; }
+  .v-post-head { padding: 0.75rem 1rem; }
+  .v-post-body h3 { font-size: 1.1rem; }
+  .v-post-body p { font-size: 0.85rem; }
+  .v-post-tags span { font-size: 0.75rem; padding: 0.2rem 0.5rem; }
+  .v-post-actions { flex-direction: column; width: 100%; }
+  .v-post-actions .btn-sm { width: 100%; justify-content: center; padding: 0.6rem 1rem; font-size: 0.85rem; }
 }
 
 /* ---- Responsive extras ---- */

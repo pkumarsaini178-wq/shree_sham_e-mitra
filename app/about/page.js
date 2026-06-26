@@ -12,8 +12,8 @@ export default function About() {
         <div className="container">
           <div className="about-grid">
             <div className="about-img fade-in-left appear">
-              <div className="about-img-placeholder">
-                <i className="fa-solid fa-users"></i>
+              <div className="about-img-wrapper" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+                <img src="/Founder_pic.jpeg" alt="Founder of Shree Shyam e-Mitra" style={{ width: '100%', display: 'block', objectFit: 'cover' }} />
               </div>
             </div>
             <div className="about-content fade-in-right appear">

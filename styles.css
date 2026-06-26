@@ -3456,3 +3456,23 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Certificate Card Premium Hover */
+.certificate-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-bottom: 4px solid transparent;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2) !important;
+  border-bottom: 4px solid var(--accent);
+}
+
+.certificate-card img {
+  transition: transform 0.5s ease;
+}
+
+.certificate-card:hover img {
+  transform: scale(1.08);
+}

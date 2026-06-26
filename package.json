@@ -1,15 +1,17 @@
 {
   "name": "shree-emitra-website",
   "version": "1.0.0",
-  "description": "Shree Shyam e-Mitra website with email contact form backend",
+  "description": "Shree Shyam e-Mitra website with Next.js",
   "scripts": {
-    "dev": "node local-server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.3",
+    "next": "14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "nodemailer": "^9.0.1"
   }
 }
